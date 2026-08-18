@@ -8,25 +8,25 @@ const features = [
   {
     icon: Atom,
     title: 'Quantum Workshops',
-    desc: 'Hands-on sessions with Qiskit — from superposition to entanglement. No prior quantum knowledge needed!',
+    desc: 'Hands-on sessions — from superposition to entanglement. No prior quantum knowledge needed!',
     color: 'bg-purple-100 text-purple-600',
   },
   {
     icon: Globe,
     title: 'Global Community',
-    desc: "Part of IBM's worldwide Qiskit Fall Fest initiative happening across 100+ universities globally.",
+    desc: "Part of IBM's worldwide Qiskit Fall Fest initiative happening across 200+ universities globally.",
     color: 'bg-blue-100 text-blue-600',
   },
   {
     icon: Zap,
     title: 'Hackathon',
-    desc: 'Compete in quantum challenges, solve real-world problems using quantum algorithms on actual IBM Quantum hardware.',
+    desc: 'Compete in quantum challenges, and win IBM Quantum goodies! (Exclusively for VESIT students)',
     color: 'bg-pink-100 text-pink-600',
   },
   {
     icon: Users,
     title: 'Expert Talks',
-    desc: 'Learn from quantum researchers, IBM Qiskit advocates, and industry leaders pushing the frontier of quantum tech.',
+    desc: 'Learn from quantum experts, IBM Qiskit advocates, and industry leaders pushing the frontier of quantum tech.',
     color: 'bg-indigo-100 text-indigo-600',
   },
 ];
@@ -125,7 +125,7 @@ export default function About() {
                 this event is designed to level up your quantum game.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                {['Beginners Welcome', 'Free Entry', 'IBM Certification', 'Cool Swag'].map((tag) => (
+                {['Beginners Welcome', 'Free Entry', 'Cool Swag'].map((tag) => (
                   <span key={tag} className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm font-medium text-white backdrop-blur-sm">
                     {tag}
                   </span>

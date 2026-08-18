@@ -41,7 +41,7 @@ function useCountdown(targetDate) {
 export default function Countdown() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
-  const { days, hours, minutes, seconds } = useCountdown('2026-10-15T09:00:00+05:30');
+  const { days, hours, minutes, seconds } = useCountdown('2026-10-02T10:00:00+05:30');
 
   return (
     <section className="py-20 bg-gradient-to-br from-purple-700 via-violet-700 to-indigo-800 relative overflow-hidden">
@@ -82,7 +82,7 @@ export default function Countdown() {
             Event Starts In
           </div>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-10">
-            The Countdown is On! ⚛️
+            The Countdown is On!
           </h2>
           <div className="flex gap-4 md:gap-8 justify-center">
             <CountdownUnit value={days} label="Days" />
@@ -94,7 +94,7 @@ export default function Countdown() {
             <CountdownUnit value={seconds} label="Seconds" />
           </div>
           <p className="font-body text-purple-200 text-sm mt-8">
-            📅 October 15–17, 2026 &nbsp;|&nbsp; 📍 VESIT, Chembur, Mumbai
+            October 2–6, 2026 &nbsp;|&nbsp; VESIT, Chembur, Mumbai
           </p>
         </motion.div>
       </div>

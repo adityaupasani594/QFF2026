@@ -114,7 +114,7 @@ export default function FAQ() {
         </div>
 
         {/* Still have questions */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -129,7 +129,7 @@ export default function FAQ() {
           >
             ✉️ Contact Us
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

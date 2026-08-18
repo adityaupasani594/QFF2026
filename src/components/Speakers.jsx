@@ -156,22 +156,6 @@ export default function Speakers() {
             <SpeakerCard key={s.name + i} speaker={s} index={i} />
           ))}
         </div>
-
-        {/* Hackathon mentors note */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="inline-flex items-center gap-3 glass-purple rounded-2xl px-6 py-4 border border-purple-200">
-            <Users size={15} className="text-purple-500" />
-            <span className="font-mono text-purple-600 text-sm">
-              Hackathon mentors to be announced · Oct 5–6 at VESIT
-            </span>
-            <span className="animate-pulse text-purple-400">✦</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

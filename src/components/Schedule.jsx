@@ -131,7 +131,7 @@ export default function Schedule() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.6, delay: di * 0.15 }}
-                className="rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:shadow-purple-100 transition-all duration-300"
+                className="rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:shadow-purple-100 transition-all duration-300 flex flex-col"
               >
                 {/* Day header */}
                 <div className={`bg-gradient-to-br ${day.color} p-6 text-white relative overflow-hidden`}>
@@ -156,7 +156,7 @@ export default function Schedule() {
                 </div>
 
                 {/* Timeline events */}
-                <div className={`${day.light} border p-5 space-y-5`}>
+                <div className={`${day.light} border p-5 flex flex-col flex-1 gap-5`}>
                   {day.events.map((event, ei) => {
                     const Icon = event.icon;
                     return (
@@ -166,7 +166,7 @@ export default function Schedule() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: di * 0.1 + ei * 0.1 }}
-                        className="flex gap-4 items-start group"
+                        className="flex gap-4 items-start group flex-1"
                       >
                         <div className="flex flex-col items-center gap-1 flex-shrink-0 mt-1.5">
                           <div className={`w-2.5 h-2.5 rounded-full ${day.dot} flex-shrink-0`} />
@@ -217,7 +217,7 @@ export default function Schedule() {
             <div>
               <h4 className="font-display font-bold text-lg text-gray-800 mb-1">Online Sessions</h4>
               <p className="font-body text-sm text-gray-600">
-                Oct 2 & 3 sessions are online and open to <span className="font-semibold text-purple-600">everyone</span>.
+                October 2 & 3 sessions are online and open to <span className="font-semibold text-purple-600">everyone</span>.
                 Register to get the link.
               </p>
             </div>
@@ -237,18 +237,9 @@ export default function Schedule() {
             <div>
               <h4 className="font-display font-bold text-lg text-gray-800 mb-1">In-Person Hackathon</h4>
               <p className="font-body text-sm text-gray-600">
-                Oct 5–6 Hackathon is offline at VESIT, Chembur and{' '}
+                October 5–6 Hackathon is offline at VESIT, Chembur (As a part of Syrus) and{' '}
                 <span className="font-semibold text-fuchsia-600">exclusively for VESIT students</span>.
               </p>
-              <a
-                id="directions-btn"
-                href="https://maps.google.com/?q=VESIT+Chembur+Mumbai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-2 font-mono text-xs text-fuchsia-600 hover:underline"
-              >
-                Get Directions →
-              </a>
             </div>
           </motion.div>
         </div>

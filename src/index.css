@@ -1,19 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* Core Brand Palette */
-  --color-brand-blue: #0F4C75;       /* deep Prussian blue */
-  --color-brand-orange: #E8602C;     /* burnt orange / quantum energy */
-  --color-brand-teal: #0D7377;       /* deep teal */
-  --color-brand-gold: #C9A84C;       /* warm gold */
-
-  /* Neutral Scale */
-  --color-surface: #F7F5F2;          /* warm off-white */
-  --color-surface-alt: #EEF0F4;      /* cool-tinted light */
-  --color-text-primary: #18181B;
-  --color-text-muted: #52525B;
-
-  /* Keep purple tokens for any remaining purple classes */
   --color-purple-50: #faf5ff;
   --color-purple-100: #f3e8ff;
   --color-purple-200: #e9d5ff;
@@ -24,6 +11,10 @@
   --color-purple-700: #7e22ce;
   --color-purple-800: #6b21a8;
   --color-purple-900: #581c87;
+
+  --color-lavender: #c4b5fd;
+  --color-soft-purple: #ede9fe;
+  --color-qiskit-purple: #8a3ffc;
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -41,56 +32,49 @@
 
   body {
     font-family: var(--font-body);
-    background-color: #F7F5F2;
-    color: #18181B;
+    background-color: #fafafa;
+    color: #1a1a2e;
     overflow-x: hidden;
   }
 }
 
 @layer utilities {
-  /* Brand gradient: deep blue → teal */
   .gradient-text {
-    background: linear-gradient(135deg, #0F4C75 0%, #0D7377 45%, #E8602C 100%);
+    background: linear-gradient(135deg, #8a3ffc 0%, #c084fc 50%, #f472b6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Warm variant: orange → gold */
   .gradient-text-2 {
-    background: linear-gradient(135deg, #E8602C 0%, #C9A84C 100%);
+    background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Subtle frosted-glass card */
   .glass-card {
-    background: rgba(247, 245, 242, 0.82);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(15, 76, 117, 0.12);
+    border: 1px solid rgba(196, 181, 253, 0.3);
   }
 
-  /* Tinted glass (replaces glass-purple) */
   .glass-purple {
-    background: rgba(13, 115, 119, 0.06);
+    background: rgba(139, 92, 246, 0.08);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(13, 115, 119, 0.18);
+    border: 1px solid rgba(196, 181, 253, 0.4);
   }
 
-  /* Hero background: warm off-white with teal + amber radial blooms */
   .hero-bg {
-    background:
-      radial-gradient(ellipse at 18% 55%, rgba(13, 115, 119, 0.12) 0%, transparent 52%),
-      radial-gradient(ellipse at 82% 18%, rgba(232, 96, 44, 0.10) 0%, transparent 48%),
-      radial-gradient(ellipse at 62% 82%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
-      #F7F5F2;
+    background: radial-gradient(ellipse at 20% 50%, rgba(196, 181, 253, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(167, 139, 250, 0.2) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(244, 114, 182, 0.1) 0%, transparent 50%),
+                #fafafa;
   }
 
-  /* Section alt bg: very subtle cool tint */
   .section-bg-alt {
-    background: linear-gradient(180deg, #EEF0F4 0%, #F7F5F2 100%);
+    background: linear-gradient(180deg, #faf5ff 0%, #f0f4ff 100%);
   }
 
   .particle {
@@ -99,14 +83,12 @@
     pointer-events: none;
   }
 
-  /* Timeline uses brand orange → teal */
   .timeline-line {
-    background: linear-gradient(180deg, #E8602C, #C9A84C, #0D7377);
+    background: linear-gradient(180deg, #8a3ffc, #c084fc, #f472b6);
   }
 
-  /* Blob: teal-amber (replaces purple) */
   .quantum-blob {
-    background: linear-gradient(135deg, rgba(13, 115, 119, 0.25), rgba(232, 96, 44, 0.15));
+    background: linear-gradient(135deg, rgba(196, 181, 253, 0.4), rgba(167, 139, 250, 0.3));
     border-radius: 50% 50% 30% 70% / 50% 50% 70% 30%;
     filter: blur(40px);
   }

@@ -36,7 +36,7 @@ export default function Register() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
             <Sparkles size={14} />
             Register Now
           </div>
@@ -58,7 +58,7 @@ export default function Register() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-7"
           >
-            <div className="glass-purple rounded-3xl p-8 md:p-10 border border-teal-200 h-full flex flex-col justify-between">
+            <div className="glass-purple rounded-3xl p-8 md:p-10 border border-purple-200 h-full flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <img src={qiskitLogo} alt="Qiskit" className="h-8 w-auto" />
@@ -67,17 +67,17 @@ export default function Register() {
                 <ul className="space-y-3.5">
                   {perks.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm md:text-base text-gray-700">
-                      <CheckCircle2 size={18} className="text-teal-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 size={18} className="text-purple-600 flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-teal-200/60 flex flex-wrap items-center gap-3 text-xs font-mono text-teal-700">
-                <span className="px-3 py-1 bg-teal-100/80 rounded-full">✦ 100% Free</span>
-                <span className="px-3 py-1 bg-teal-100/80 rounded-full">✦ Beginners Welcome</span>
-                <span className="px-3 py-1 bg-teal-100/80 rounded-full">✦ No Prior Physics Needed</span>
+              <div className="mt-8 pt-6 border-t border-purple-200/60 flex flex-wrap items-center gap-3 text-xs font-mono text-purple-700">
+                <span className="px-3 py-1 bg-purple-100/80 rounded-full">✦ 100% Free</span>
+                <span className="px-3 py-1 bg-purple-100/80 rounded-full">✦ Beginners Welcome</span>
+                <span className="px-3 py-1 bg-purple-100/80 rounded-full">✦ No Prior Physics Needed</span>
               </div>
             </div>
           </motion.div>
@@ -90,7 +90,7 @@ export default function Register() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-5"
           >
-            <div className="glass-card rounded-3xl p-8 md:p-10 border border-amber-200 h-full flex flex-col items-center justify-center text-center relative overflow-hidden shadow-lg shadow-amber-100/40">
+            <div className="glass-card rounded-3xl p-8 md:p-10 border border-purple-200 h-full flex flex-col items-center justify-center text-center relative overflow-hidden shadow-lg shadow-purple-100/40">
               {/* Floating sticker illustration */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
@@ -113,7 +113,7 @@ export default function Register() {
                 href={GOOGLE_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 px-6 bg-orange-600 hover:bg-orange-700 text-white font-display font-bold text-base rounded-2xl shadow-lg shadow-orange-200 hover:shadow-orange-300 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 group"
+                className="w-full py-4 px-6 bg-purple-600 hover:bg-purple-700 text-white font-display font-bold text-base rounded-2xl shadow-lg shadow-purple-200 hover:shadow-purple-300 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 group"
               >
                 <Sparkles size={18} className="group-hover:rotate-12 transition-transform" />
                 <span>Register via Google Form</span>

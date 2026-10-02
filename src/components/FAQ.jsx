@@ -43,19 +43,19 @@ function FAQItem({ faq, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, delay: index * 0.07 }}
-      className="border border-slate-200 rounded-2xl overflow-hidden hover:border-teal-300 transition-colors"
+      className="border border-purple-100 rounded-2xl overflow-hidden hover:border-purple-300 transition-colors"
     >
       <button
         id={`faq-btn-${index}`}
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-teal-50/50 transition-colors group"
+        className="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-purple-50/50 transition-colors group"
         aria-expanded={open}
       >
         <span className="font-display font-semibold text-sm md:text-base text-gray-800 pr-4">{faq.q}</span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
-          className="flex-shrink-0 w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 group-hover:bg-teal-200 transition-colors"
+          className="flex-shrink-0 w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 group-hover:bg-purple-200 transition-colors"
         >
           <ChevronDown size={14} />
         </motion.div>
@@ -93,7 +93,7 @@ export default function FAQ() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
             <HelpCircle size={14} />
             FAQ
           </div>

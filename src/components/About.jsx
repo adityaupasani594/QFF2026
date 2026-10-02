@@ -9,7 +9,7 @@ const features = [
     icon: Atom,
     title: 'Quantum Workshops',
     desc: 'Hands-on sessions — from superposition to entanglement. No prior quantum knowledge needed!',
-    color: 'bg-teal-100 text-teal-700',
+    color: 'bg-purple-100 text-purple-600',
   },
   {
     icon: Globe,
@@ -36,7 +36,7 @@ function FeatureCard({ feature, index }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.15 }}
-      className="glass-card rounded-3xl p-7 hover:shadow-lg hover:shadow-teal-100 transition-all duration-300 hover:-translate-y-1 group"
+      className="glass-card rounded-3xl p-7 hover:shadow-lg hover:shadow-purple-100 transition-all duration-300 hover:-translate-y-1 group"
     >
       <div className={`w-12 h-12 rounded-2xl ${feature.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
         <Icon size={22} />
@@ -62,8 +62,8 @@ export default function About() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
-            <span className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+            <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
             About the Event
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-800 mb-5">
@@ -73,7 +73,7 @@ export default function About() {
           <p className="font-body text-base md:text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
             Qiskit Fall Fest is IBM's flagship quantum computing event series, brought to campus by student
             communities worldwide. At VESIT, we're making quantum computing{' '}
-            <span className="text-teal-700 font-medium">accessible, fun, and exciting</span> for every student.
+            <span className="text-purple-600 font-medium">accessible, fun, and exciting</span> for every student.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function About() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7 }}
-          className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-800 via-teal-900 to-zinc-900 p-10 md:p-14 text-white"
+          className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600 to-indigo-700 p-10 md:p-14 text-white"
         >
           <div className="absolute inset-0 opacity-10">
             {Array.from({ length: 8 }).map((_, i) => (
@@ -110,11 +110,11 @@ export default function About() {
 
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
-              <p className="font-mono text-teal-300 text-sm mb-3">✦ Hosted at VESIT, Mumbai</p>
+              <p className="font-mono text-purple-200 text-sm mb-3">✦ Hosted at VESIT, Mumbai</p>
               <h3 className="font-display font-bold text-3xl md:text-4xl mb-4">
                 Join the Quantum Revolution
               </h3>
-              <p className="font-body text-gray-300 text-base leading-relaxed max-w-xl">
+              <p className="font-body text-purple-100 text-base leading-relaxed max-w-xl">
                 Whether you're a complete beginner or already know your Hadamard gates from your CNOT gates —
                 this event is designed to level up your quantum game.
               </p>

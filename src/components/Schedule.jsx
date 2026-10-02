@@ -22,9 +22,9 @@ const sessionList = [
     date: 'Monday, Oct 5',
     time: '6:00 PM IST',
     theme: 'Keynote',
-    color: 'from-amber-500 to-orange-600',
-    light: 'bg-amber-50/70 border-amber-200',
-    dot: 'bg-amber-600',
+    color: 'from-purple-600 to-indigo-600',
+    light: 'bg-purple-50/70 border-purple-200',
+    dot: 'bg-purple-600',
     title: 'Quantum 101: Why the Quantum Revolution Matters',
     speaker: 'Ms. Guncha Malik',
     org: 'STSM at IBM',
@@ -37,9 +37,9 @@ const sessionList = [
     date: 'Monday, Oct 5',
     time: '7:00 PM onwards',
     theme: 'Career Journey',
-    color: 'from-sky-600 to-cyan-600',
-    light: 'bg-sky-50/70 border-sky-200',
-    dot: 'bg-sky-600',
+    color: 'from-indigo-600 to-violet-600',
+    light: 'bg-indigo-50/70 border-indigo-200',
+    dot: 'bg-indigo-600',
     title: 'From Internship to PPO: Journey into IBM Quantum',
     speaker: 'Alfiya Siddique',
     org: 'IBM Quantum Intern',
@@ -52,9 +52,9 @@ const sessionList = [
     date: 'Tuesday, Oct 6',
     time: '7:00 PM IST',
     theme: 'Hands-On',
-    color: 'from-teal-600 to-emerald-600',
-    light: 'bg-teal-50/70 border-teal-200',
-    dot: 'bg-teal-600',
+    color: 'from-violet-600 to-purple-600',
+    light: 'bg-violet-50/70 border-violet-200',
+    dot: 'bg-violet-600',
     title: 'From Qubits to Code: Your First Quantum Program',
     speaker: 'Aditya Upasani',
     org: 'Qiskit Advocate',
@@ -67,9 +67,9 @@ const sessionList = [
     date: 'Wednesday, Oct 7',
     time: '7:00 PM IST',
     theme: 'QML',
-    color: 'from-blue-700 to-indigo-700',
-    light: 'bg-blue-50/70 border-blue-200',
-    dot: 'bg-blue-700',
+    color: 'from-indigo-600 to-sky-600',
+    light: 'bg-sky-50/70 border-sky-200',
+    dot: 'bg-sky-600',
     title: 'QML Unleashed: Quantum Meets Machine Learning',
     speaker: 'Aditya Upasani',
     org: 'Qiskit Advocate',
@@ -82,9 +82,9 @@ const sessionList = [
     date: 'Thursday, Oct 8',
     time: '7:00 PM IST',
     theme: 'Applications & QKD',
-    color: 'from-rose-600 to-red-700',
-    light: 'bg-rose-50/70 border-rose-200',
-    dot: 'bg-rose-600',
+    color: 'from-fuchsia-600 to-pink-600',
+    light: 'bg-fuchsia-50/70 border-fuchsia-200',
+    dot: 'bg-fuchsia-600',
     title: 'Beyond Experimentation: Quantum in the Real World',
     speaker: 'Shravani Kale',
     org: 'Qiskit Advocate · VESIT',
@@ -97,9 +97,9 @@ const sessionList = [
     date: 'Thursday, Oct 8',
     time: '7:45 PM onwards',
     theme: 'Logistics & Optimization',
-    color: 'from-slate-600 to-zinc-700',
-    light: 'bg-slate-50/70 border-slate-200',
-    dot: 'bg-slate-600',
+    color: 'from-pink-600 to-rose-600',
+    light: 'bg-rose-50/70 border-rose-200',
+    dot: 'bg-rose-600',
     title: 'Quantum on the Move: Traffic & Logistics',
     speaker: 'Vedant Mhatre',
     org: 'Senior PR Manager · VESIT',
@@ -112,9 +112,9 @@ const hackathon = {
   day: 'The Hackathon',
   date: 'Fri–Sat, Oct 9–10, 2026',
   theme: 'Grand Finale',
-  color: 'from-orange-600 via-amber-500 to-yellow-500',
-  light: 'bg-orange-50/60 border-orange-200',
-  dot: 'bg-orange-600',
+  color: 'from-fuchsia-600 via-pink-600 to-rose-600',
+  light: 'bg-pink-50/60 border-pink-200',
+  dot: 'bg-fuchsia-600',
   mode: 'Offline · VESIT Students Only',
   modeIcon: Users,
   events: [
@@ -186,7 +186,7 @@ export default function Schedule() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
             <Clock size={14} />
             Event Schedule
           </div>
@@ -197,14 +197,14 @@ export default function Schedule() {
           <p className="font-body text-base text-gray-500 max-w-2xl mx-auto">
             Four days of online learning sessions open to everyone, followed by an in-person hackathon
             exclusively for VESIT students. Kicks off{' '}
-            <span className="font-semibold text-teal-700">Monday, October 5th at 6 PM</span>.
+            <span className="font-semibold text-purple-600">Monday, October 5th at 6 PM</span>.
           </p>
         </motion.div>
 
         {/* Carousel Controls Bar */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-2">
-            <span className="font-mono text-xs font-semibold text-teal-700 bg-teal-50 border border-teal-200/80 px-3 py-1.5 rounded-full">
+            <span className="font-mono text-xs font-semibold text-purple-700 bg-purple-50 border border-purple-200/80 px-3 py-1.5 rounded-full">
               Showing {currentIndex + 1}–{Math.min(currentIndex + itemsPerPage, sessionList.length)} of {sessionList.length} Sessions
             </span>
           </div>
@@ -215,7 +215,7 @@ export default function Schedule() {
               onClick={handlePrev}
               disabled={currentIndex === 0}
               aria-label="Previous session"
-              className="w-10 h-10 rounded-full flex items-center justify-center border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 shadow-sm transition-all active:scale-95 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+              className="w-10 h-10 rounded-full flex items-center justify-center border border-purple-200 bg-white hover:bg-purple-50 text-purple-700 shadow-sm transition-all active:scale-95 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
             >
               <ChevronLeft size={20} />
             </button>
@@ -223,7 +223,7 @@ export default function Schedule() {
               onClick={handleNext}
               disabled={currentIndex === maxIndex}
               aria-label="Next session"
-              className="w-10 h-10 rounded-full flex items-center justify-center border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 shadow-sm transition-all active:scale-95 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+              className="w-10 h-10 rounded-full flex items-center justify-center border border-purple-200 bg-white hover:bg-purple-50 text-purple-700 shadow-sm transition-all active:scale-95 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
             >
               <ChevronRight size={20} />
             </button>
@@ -258,7 +258,7 @@ export default function Schedule() {
                     width: `calc((100% - ${(itemsPerPage - 1) * 24}px) / ${itemsPerPage})`,
                   }}
                 >
-                  <div className="h-[430px] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-slate-200 transition-all duration-300 flex flex-col border border-slate-200/80 bg-white select-none">
+                  <div className="h-[430px] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-purple-100 transition-all duration-300 flex flex-col border border-purple-100/80 bg-white select-none">
                     {/* Header */}
                     <div className={`bg-gradient-to-br ${session.color} p-5 text-white relative overflow-hidden flex-shrink-0 h-32 flex flex-col justify-between`}>
                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
@@ -289,7 +289,7 @@ export default function Schedule() {
                       <div>
                         <div className="flex items-center gap-2 mb-2">
                           <div className={`w-2 h-2 rounded-full ${session.dot}`} />
-                          <span className="font-mono text-[11px] font-semibold text-slate-600 flex items-center gap-1">
+                          <span className="font-mono text-[11px] font-semibold text-purple-700 flex items-center gap-1">
                             <Icon size={12} />
                             Live Webinar
                           </span>
@@ -300,7 +300,7 @@ export default function Schedule() {
                         </h4>
 
                         <div className="mb-2.5">
-                          <p className="font-mono text-xs text-teal-700 font-bold">
+                          <p className="font-mono text-xs text-purple-700 font-bold">
                             {session.speaker}
                           </p>
                           <p className="font-mono text-[11px] text-gray-500 font-medium">
@@ -313,8 +313,8 @@ export default function Schedule() {
                         </p>
                       </div>
 
-                      <div className="pt-3 border-t border-slate-200/50 flex items-center justify-between text-[11px] font-mono text-gray-400 mt-2">
-                        <span className="text-teal-600 font-semibold">Free Registration ✦</span>
+                      <div className="pt-3 border-t border-purple-200/50 flex items-center justify-between text-[11px] font-mono text-gray-400 mt-2">
+                        <span className="text-purple-600 font-semibold">Free Registration ✦</span>
                         <span className="text-gray-400">Session {session.id} of {sessionList.length}</span>
                       </div>
                     </div>
@@ -332,7 +332,7 @@ export default function Schedule() {
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               className={`h-2.5 transition-all duration-300 rounded-full cursor-pointer ${
-                currentIndex === idx ? 'w-8 bg-teal-600' : 'w-2.5 bg-slate-300 hover:bg-slate-400'
+                currentIndex === idx ? 'w-8 bg-purple-600' : 'w-2.5 bg-purple-200 hover:bg-purple-300'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
@@ -345,10 +345,10 @@ export default function Schedule() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-12 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-amber-100 transition-all duration-300 border border-amber-200 flex flex-col lg:flex-row"
+          className="mt-12 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-pink-100 transition-all duration-300 border border-pink-200 flex flex-col lg:flex-row"
         >
           {/* Hackathon Left Header */}
-          <div className="lg:w-2/5 bg-gradient-to-br from-orange-600 via-amber-500 to-yellow-500 p-8 text-white relative overflow-hidden flex flex-col justify-between">
+          <div className="lg:w-2/5 bg-gradient-to-br from-fuchsia-600 via-pink-600 to-rose-600 p-8 text-white relative overflow-hidden flex flex-col justify-between">
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 pointer-events-none" />
             <div className="relative z-10">
@@ -378,21 +378,21 @@ export default function Schedule() {
           </div>
 
           {/* Hackathon Right Milestones */}
-          <div className="lg:w-3/5 bg-amber-50/60 p-6 md:p-8 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 bg-pink-50/60 p-6 md:p-8 flex flex-col justify-center gap-6">
             {hackathon.events.map((event, ei) => {
               const Icon = event.icon;
               return (
                 <div key={event.title} className="flex gap-4 items-start group">
                   <div className="flex flex-col items-center gap-1 flex-shrink-0 mt-1.5">
-                    <div className="w-3 h-3 rounded-full bg-orange-600 flex-shrink-0 ring-4 ring-orange-100" />
+                    <div className="w-3 h-3 rounded-full bg-fuchsia-600 flex-shrink-0 ring-4 ring-fuchsia-100" />
                     {ei < hackathon.events.length - 1 && (
-                      <div className="w-0.5 h-14 bg-orange-300" />
+                      <div className="w-0.5 h-14 bg-fuchsia-300" />
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
-                      <Icon size={13} className="text-orange-600 flex-shrink-0" />
-                      <span className="font-mono text-xs font-semibold text-orange-700 bg-orange-100 px-2.5 py-0.5 rounded-full">
+                      <Icon size={13} className="text-fuchsia-600 flex-shrink-0" />
+                      <span className="font-mono text-xs font-semibold text-fuchsia-700 bg-fuchsia-100 px-2.5 py-0.5 rounded-full">
                         {event.time}
                       </span>
                     </div>
@@ -421,15 +421,15 @@ export default function Schedule() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass-purple rounded-3xl p-6 flex gap-5 items-start border border-teal-200"
+            className="glass-purple rounded-3xl p-6 flex gap-5 items-start border border-purple-200"
           >
-            <div className="w-12 h-12 bg-teal-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 bg-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
               <Monitor size={22} className="text-white" />
             </div>
             <div>
               <h4 className="font-display font-bold text-lg text-gray-800 mb-1">Online Sessions</h4>
               <p className="font-body text-sm text-gray-600">
-                October 5–8 sessions are online and open to <span className="font-semibold text-teal-700">everyone</span>.
+                October 5–8 sessions are online and open to <span className="font-semibold text-purple-600">everyone</span>.
                 Register to get the stream links and workshop notebooks.
               </p>
             </div>
@@ -441,9 +441,9 @@ export default function Schedule() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="rounded-3xl p-6 flex gap-5 items-start border border-amber-200 bg-amber-50"
+            className="rounded-3xl p-6 flex gap-5 items-start border border-pink-200 bg-pink-50"
           >
-            <div className="w-12 h-12 bg-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 bg-fuchsia-600 rounded-2xl flex items-center justify-center flex-shrink-0">
               <MapPin size={22} className="text-white" />
             </div>
             <div>

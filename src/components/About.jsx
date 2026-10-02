@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Atom, Globe, Zap, Users } from 'lucide-react';
+import { Atom, Globe, Zap } from 'lucide-react';
 import { sticker01, sticker05 } from '../assets/index.js';
 
 const features = [
@@ -22,12 +22,6 @@ const features = [
     title: 'Hackathon',
     desc: 'Compete in quantum challenges, and win IBM Quantum goodies! (Exclusively for VESIT students)',
     color: 'bg-pink-100 text-pink-600',
-  },
-  {
-    icon: Users,
-    title: 'Expert Talks',
-    desc: 'Learn from quantum experts, IBM Qiskit advocates, and industry leaders pushing the frontier of quantum tech.',
-    color: 'bg-indigo-100 text-indigo-600',
   },
 ];
 
@@ -84,7 +78,7 @@ export default function About() {
         </motion.div>
 
         {/* Feature cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {features.map((f, i) => (
             <FeatureCard key={f.title} feature={f} index={i} />
           ))}

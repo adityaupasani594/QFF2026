@@ -15,7 +15,7 @@ const footerLinks = [
     links: [
       { label: 'About', href: '#about' },
       { label: 'Schedule', href: '#schedule' },
-      { label: 'Speakers', href: '#speakers' },
+      { label: 'Organizing Committee', href: '#committee' },
       { label: 'Prizes', href: '#prizes' },
     ],
   },

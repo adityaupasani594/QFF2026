@@ -41,7 +41,7 @@ function useCountdown(targetDate) {
 export default function Countdown() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
-  const { days, hours, minutes, seconds } = useCountdown('2026-10-02T10:00:00+05:30');
+  const { days, hours, minutes, seconds } = useCountdown('2026-10-05T18:00:00+05:30');
 
   return (
     <section className="py-20 bg-gradient-to-br from-purple-700 via-violet-700 to-indigo-800 relative overflow-hidden">
@@ -94,7 +94,7 @@ export default function Countdown() {
             <CountdownUnit value={seconds} label="Seconds" />
           </div>
           <p className="font-body text-purple-200 text-sm mt-8">
-            October 2–6, 2026 &nbsp;|&nbsp; VESIT, Chembur, Mumbai
+            October 5–10, 2026 &nbsp;|&nbsp; VESIT, Chembur, Mumbai
           </p>
         </motion.div>
       </div>

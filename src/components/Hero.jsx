@@ -63,33 +63,6 @@ export default function Hero() {
       {/* ── Main content ── */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
 
-        {/* Logo lockup: Qiskit × VESIT */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex items-center justify-center gap-4 md:gap-6 mb-10 flex-wrap"
-        >
-          {/* Qiskit Bloch sphere logo */}
-          <img
-            src={qiskitLogo}
-            alt="Qiskit"
-            className="h-16 md:h-20 w-auto drop-shadow-md"
-          />
-
-          {/* × separator */}
-          <span className="font-display font-bold text-4xl md:text-5xl text-purple-400 select-none leading-none">
-            ×
-          </span>
-
-          {/* VESIT logo */}
-          <img
-            src={vesitLogo}
-            alt="VESIT"
-            className="h-14 md:h-16 w-auto drop-shadow-sm"
-          />
-        </motion.div>
-
         {/* Main title */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -152,7 +125,7 @@ export default function Hero() {
           className="flex flex-wrap gap-4 justify-center"
         >
           {[
-            { value: '4', label: 'Live Sessions' },
+            { value: '5', label: 'Live Sessions' },
             { value: '₹0', label: 'Entry Fee' },
             { value: '🌐', label: 'Open to All' },
             { value: '🏆', label: 'Hackathon @ VESIT' },

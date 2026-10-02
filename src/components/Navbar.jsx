@@ -6,7 +6,7 @@ import { qiskitLogo, vesitLogo } from '../assets/index.js';
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Schedule', href: '#schedule' },
-  { label: 'Speakers', href: '#speakers' },
+  { label: 'Organizing Committee', href: '#committee' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Register', href: '#register' },
 ];

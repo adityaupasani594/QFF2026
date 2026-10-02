@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: 'Do I need to know quantum physics or programming?',
-    a: 'Not at all! Workshops on Day 1 are beginner-friendly. A basic understanding of Python is helpful for the hackathon, but we\'ll have mentors to guide you throughout.',
+    a: 'Not at all! The introductory workshops starting on Day 1 are completely beginner-friendly. A basic understanding of Python is helpful for the hackathon, but we\'ll have mentors to guide you throughout.',
   },
   {
     q: 'Is there a registration fee?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Can I participate as an individual or do I need a team?',
-    a: 'The workshops on Day 1 and 2 are open to all individuals. For the hackathon, teams of 2-4 members are preferred.',
+    a: 'All online sessions (October 5–8) are open to all individuals worldwide. For the offline hackathon at VESIT, teams of 2-4 members are preferred.',
   },
   {
     q: 'What should I bring?',

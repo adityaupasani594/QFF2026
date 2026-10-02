@@ -34,7 +34,7 @@ export default function Hero() {
       <motion.img
         src={sticker07}
         alt=""
-        className="absolute top-20 right-4 md:right-16 w-20 md:w-48 drop-shadow-xl pointer-events-none"
+        className="absolute top-28 md:top-20 right-4 md:right-16 w-20 md:w-48 drop-shadow-xl pointer-events-none"
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0, y: [0, -14, 0], rotate: [2, -2, 2] }}
         transition={{
@@ -49,7 +49,7 @@ export default function Hero() {
       <motion.img
         src={sticker02}
         alt=""
-        className="absolute bottom-40 md:bottom-20 left-4 md:left-14 w-16 md:w-36 drop-shadow-lg pointer-events-none"
+        className="absolute bottom-52 md:bottom-20 left-4 md:left-14 w-16 md:w-36 drop-shadow-lg pointer-events-none"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, y: [0, -10, 0], rotate: [-3, 2, -3] }}
         transition={{

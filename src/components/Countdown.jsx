@@ -6,12 +6,12 @@ import { qiskitLogo } from '../assets/index.js';
 function CountdownUnit({ value, label }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="glass-card rounded-2xl w-20 h-20 md:w-24 md:h-24 flex items-center justify-center shadow-md shadow-purple-100/50 mb-2">
-        <span className="font-display font-black text-3xl md:text-4xl gradient-text-2">
+      <div className="glass-card rounded-xl md:rounded-2xl w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center shadow-md shadow-purple-100/50 mb-2">
+        <span className="font-display font-black text-xl sm:text-2xl md:text-4xl gradient-text-2">
           {String(value).padStart(2, '0')}
         </span>
       </div>
-      <span className="font-mono text-xs text-gray-400 uppercase tracking-widest">{label}</span>
+      <span className="font-mono text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider md:tracking-widest">{label}</span>
     </div>
   );
 }
@@ -84,13 +84,13 @@ export default function Countdown() {
           <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-10">
             The Countdown is On!
           </h2>
-          <div className="flex gap-4 md:gap-8 justify-center">
+          <div className="flex gap-2 sm:gap-4 md:gap-8 justify-center">
             <CountdownUnit value={days} label="Days" />
-            <div className="font-display font-bold text-3xl text-purple-300 pt-5">:</div>
+            <div className="font-display font-bold text-xl md:text-3xl text-purple-300 pt-3 md:pt-5">:</div>
             <CountdownUnit value={hours} label="Hours" />
-            <div className="font-display font-bold text-3xl text-purple-300 pt-5">:</div>
+            <div className="font-display font-bold text-xl md:text-3xl text-purple-300 pt-3 md:pt-5">:</div>
             <CountdownUnit value={minutes} label="Minutes" />
-            <div className="font-display font-bold text-3xl text-purple-300 pt-5">:</div>
+            <div className="font-display font-bold text-xl md:text-3xl text-purple-300 pt-3 md:pt-5">:</div>
             <CountdownUnit value={seconds} label="Seconds" />
           </div>
           <p className="font-body text-purple-200 text-sm mt-8">

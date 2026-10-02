@@ -13,7 +13,7 @@ const particles = Array.from({ length: 14 }, (_, i) => ({
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen hero-bg flex flex-col items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen hero-bg flex flex-col items-center justify-center overflow-hidden pt-24 md:pt-0">
 
       {/* Soft particle dots */}
       {particles.map((p) => (
@@ -49,7 +49,7 @@ export default function Hero() {
       <motion.img
         src={sticker02}
         alt=""
-        className="absolute bottom-28 left-4 md:left-14 w-28 md:w-36 drop-shadow-lg pointer-events-none"
+        className="absolute bottom-40 md:bottom-20 left-4 md:left-14 w-16 md:w-36 drop-shadow-lg pointer-events-none"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, y: [0, -10, 0], rotate: [-3, 2, -3] }}
         transition={{

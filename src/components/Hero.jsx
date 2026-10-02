@@ -19,7 +19,7 @@ export default function Hero() {
       {particles.map((p) => (
         <motion.div
           key={p.id}
-          className="absolute rounded-full bg-purple-400/25"
+          className="absolute rounded-full bg-amber-400/20"
           style={{ width: p.w, height: p.w, top: `${p.top}%`, left: `${p.left}%` }}
           animate={{ y: [0, -18, 0], opacity: [0.25, 0.6, 0.25] }}
           transition={{ duration: p.dur, repeat: Infinity, delay: p.delay }}
@@ -73,8 +73,8 @@ export default function Hero() {
             Qiskit Fall Fest
           </h1>
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="font-mono text-xl font-bold text-purple-500">2026</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
+            <span className="font-mono text-xl font-bold text-teal-700">2026</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
             <span className="font-display font-semibold text-lg text-gray-500">
               VESIT, Mumbai
             </span>
@@ -90,7 +90,7 @@ export default function Hero() {
         >
           Where quantum meets curiosity. Dive into quantum computing, build circuits, win prizes, and
           join the global{' '}
-          <span className="text-purple-600 font-semibold">Qiskit community</span>.
+          <span className="text-teal-700 font-semibold">Qiskit community</span>.
         </motion.p>
 
         {/* CTAs */}
@@ -103,15 +103,15 @@ export default function Hero() {
           <a
             id="hero-register-btn"
             href="#register"
-            className="group px-8 py-4 bg-purple-600 text-white font-display font-bold text-base rounded-full shadow-lg shadow-purple-200 hover:bg-purple-700 hover:shadow-purple-300 hover:scale-105 transition-all duration-200 flex items-center gap-2"
+            className="group px-8 py-4 bg-teal-700 text-white font-display font-bold text-base rounded-full shadow-lg shadow-teal-200 hover:bg-teal-800 hover:shadow-teal-300 hover:scale-105 transition-all duration-200 flex items-center gap-2"
           >
             <Sparkles size={18} className="group-hover:rotate-12 transition-transform" />
-            Register Now — It&apos;s Free!
+            Register Now
           </a>
           <a
             id="hero-learn-btn"
             href="#about"
-            className="px-8 py-4 glass-purple text-purple-700 font-display font-semibold text-base rounded-full border border-purple-200 hover:border-purple-400 hover:scale-105 transition-all duration-200"
+            className="px-8 py-4 glass-purple text-teal-800 font-display font-semibold text-base rounded-full border border-teal-200 hover:border-teal-400 hover:scale-105 transition-all duration-200"
           >
             Learn More ↓
           </a>
@@ -125,16 +125,16 @@ export default function Hero() {
           className="flex flex-wrap gap-4 justify-center"
         >
           {[
-            { value: '5', label: 'Live Sessions' },
+            { value: '4', label: 'Days' },
             { value: '₹0', label: 'Entry Fee' },
             { value: '🌐', label: 'Open to All' },
-            { value: '🏆', label: 'Hackathon @ VESIT' },
+            { value: '🏆', label: 'Hackathon for VESIT students' },
           ].map((s) => (
             <div
               key={s.label}
-              className="glass-card rounded-2xl px-5 py-3 text-center shadow-sm hover:shadow-purple-100 transition-shadow"
+              className="glass-card rounded-2xl px-5 py-3 text-center shadow-sm hover:shadow-orange-100 transition-shadow"
             >
-              <div className="font-display font-bold text-2xl text-purple-700">{s.value}</div>
+              <div className="font-display font-bold text-2xl text-orange-600">{s.value}</div>
               <div className="font-body text-xs text-gray-500 mt-0.5">{s.label}</div>
             </div>
           ))}
@@ -146,7 +146,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-purple-400"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-orange-400"
       >
         <span className="font-mono text-xs tracking-widest">scroll</span>
         <motion.div animate={{ y: [0, 7, 0] }} transition={{ duration: 1.4, repeat: Infinity }}>

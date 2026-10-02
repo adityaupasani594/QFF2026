@@ -16,7 +16,7 @@ const committee = [
     role: 'HOD, Computer Engineering',
     org: 'VESIT',
     badge: 'Faculty Leadership',
-    color: 'from-purple-600 to-indigo-700',
+    color: 'from-slate-700 to-blue-900',
     photo: nupurPhoto,
     initials: 'NG',
   },
@@ -25,7 +25,7 @@ const committee = [
     role: 'CodeCell++ IBM Qiskit Committee In-charge',
     org: 'VESIT',
     badge: 'Committee In-charge',
-    color: 'from-indigo-600 to-blue-600',
+    color: 'from-teal-600 to-cyan-700',
     photo: sharmilaPhoto,
     initials: 'SS',
   },
@@ -34,7 +34,7 @@ const committee = [
     role: 'Quantum Technologies Faculty',
     org: 'VESIT',
     badge: 'Faculty Coordinator',
-    color: 'from-fuchsia-600 to-pink-600',
+    color: 'from-amber-600 to-orange-700',
     photo: ranjanPhoto,
     initials: 'RBJ',
   },
@@ -43,7 +43,7 @@ const committee = [
     role: 'Qiskit Advocate',
     org: 'IBM / Qiskit Community · VESIT',
     badge: 'Organizer',
-    color: 'from-purple-500 to-violet-600',
+    color: 'from-blue-700 to-indigo-800',
     photo: adityaPhoto,
     initials: 'AU',
   },
@@ -52,7 +52,7 @@ const committee = [
     role: 'Qiskit Advocate',
     org: 'IBM / Qiskit Community · VESIT',
     badge: 'Organizer',
-    color: 'from-violet-500 to-fuchsia-600',
+    color: 'from-emerald-600 to-teal-700',
     photo: shravaniPhoto,
     initials: 'SK',
   },
@@ -61,7 +61,7 @@ const committee = [
     role: 'Senior PR Manager',
     org: 'CodeCell++ VESIT',
     badge: 'Senior PR Manager',
-    color: 'from-pink-500 to-rose-600',
+    color: 'from-stone-600 to-zinc-700',
     photo: vedantPhoto,
     initials: 'VM',
   },
@@ -77,7 +77,7 @@ function CommitteeCard({ member, index }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="glass-card rounded-3xl overflow-hidden hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2 group flex flex-col"
+      className="glass-card rounded-3xl overflow-hidden hover:shadow-xl hover:shadow-zinc-200/80 transition-all duration-300 hover:-translate-y-2 group flex flex-col"
     >
       {/* Full-bleed photo stretching end to end of the card */}
       <div className={`w-full aspect-square bg-gradient-to-br ${member.color} relative flex items-end justify-center overflow-hidden`}>
@@ -129,7 +129,7 @@ function CommitteeCard({ member, index }) {
         <h3 className="font-display font-bold text-lg text-gray-800 mb-1.5 leading-snug">
           {member.name}
         </h3>
-        <p className="font-body text-sm text-purple-600 font-semibold mb-2 leading-snug">
+        <p className="font-body text-sm text-teal-700 font-semibold mb-2 leading-snug">
           {member.role}
         </p>
         <span className="font-mono text-xs text-gray-400 bg-gray-50 px-3 py-1 rounded-full border border-gray-100">
@@ -155,8 +155,8 @@ export default function OrganizingCommittee() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
-            <Users size={14} className="text-purple-600" />
+          <div className="inline-flex items-center gap-2 bg-slate-100 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+            <Users size={14} className="text-slate-600" />
             Organizing Committee
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-800 mb-5">

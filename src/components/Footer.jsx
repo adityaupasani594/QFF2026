@@ -45,12 +45,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center p-1.5">
+              <div className="w-10 h-10 rounded-full bg-teal-900/60 flex items-center justify-center p-1.5">
                 <img src={qiskitLogo} alt="Qiskit" className="w-full h-full object-contain" />
               </div>
               <div>
                 <p className="font-display font-bold text-white text-sm">Qiskit Fall Fest 2026</p>
-                <p className="font-mono text-xs text-purple-400">× VESIT, Mumbai</p>
+                <p className="font-mono text-xs text-teal-500">× VESIT, Mumbai</p>
               </div>
             </div>
             <p className="font-body text-sm leading-relaxed text-gray-500 mb-5 max-w-xs">
@@ -67,7 +67,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     aria-label={s.label}
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="w-9 h-9 bg-gray-800 hover:bg-purple-700 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all"
+                    className="w-9 h-9 bg-gray-800 hover:bg-teal-700 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all"
                   >
                     <Icon size={15} />
                   </motion.a>
@@ -87,7 +87,7 @@ export default function Footer() {
                       href={link.href}
                       target={link.external ? '_blank' : undefined}
                       rel={link.external ? 'noopener noreferrer' : undefined}
-                      className="font-body text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                      className="font-body text-sm text-gray-500 hover:text-amber-400 transition-colors"
                     >
                       {link.label}
                     </a>
@@ -116,12 +116,12 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
           <p>
             © 2026 Qiskit Fall Fest × VESIT. Made with{' '}
-            <Heart size={11} className="inline text-purple-500" fill="currentColor" />{' '}
+            <Heart size={11} className="inline text-amber-500" fill="currentColor" />{' '}
             by the VESIT Quantum Club.
           </p>
           <p className="font-mono">
             Powered by{' '}
-            <a href="https://qiskit.org" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:text-purple-400">
+            <a href="https://qiskit.org" target="_blank" rel="noopener noreferrer" className="text-teal-500 hover:text-amber-400">
               IBM Qiskit
             </a>
           </p>

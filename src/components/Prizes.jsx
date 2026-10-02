@@ -61,7 +61,7 @@ export default function Prizes() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
+          <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 text-sm font-semibold px-4 py-2 rounded-full mb-5 font-mono">
             <Trophy size={14} />
             Prizes & Rewards
           </div>
@@ -70,7 +70,7 @@ export default function Prizes() {
             <span className="gradient-text">Qiskit Fall Fest</span>
           </h2>
           <p className="font-body text-base text-gray-500 max-w-xl mx-auto">
-            Over <span className="text-purple-600 font-bold">₹55,000+</span> in prizes, IBM Quantum credits, exclusive swag, and recognition from the global quantum community.
+            Over <span className="text-orange-600 font-bold">₹55,000+</span> in prizes, IBM Quantum credits, exclusive swag, and recognition from the global quantum community.
           </p>
         </motion.div>
 
@@ -166,10 +166,10 @@ export default function Prizes() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.6 }}
-          className="glass-purple rounded-3xl p-8 border border-purple-200"
+          className="glass-purple rounded-3xl p-8 border border-teal-200"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Gift size={20} className="text-purple-600" />
+            <Gift size={20} className="text-teal-600" />
             <h3 className="font-display font-bold text-xl text-gray-800">Special Category Prizes</h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -183,7 +183,7 @@ export default function Prizes() {
                 className="flex justify-between items-center bg-white/60 rounded-2xl px-5 py-3"
               >
                 <span className="font-body text-sm text-gray-700">{p.label}</span>
-                <span className="font-display font-bold text-sm text-purple-700">{p.value}</span>
+                <span className="font-display font-bold text-sm text-teal-700">{p.value}</span>
               </motion.div>
             ))}
           </div>
